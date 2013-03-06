@@ -1,0 +1,21 @@
+<div class ="container-fluid">
+  <h1> Results </h1>
+  <p> 
+    <table class="table table-striped table-hover paginated-table">
+      <thead>
+        <tr>
+          <th>Word</th>
+          <th>Length</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @words.each do | word | %>
+            <tr>
+              <td><%= word %></td>
+              <td><%= word.length %></td>
+            </tr>
+        <% end %> 
+      </tbody>
+    </table>
+  </p> 
+</div>

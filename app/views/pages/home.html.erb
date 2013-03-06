@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <h1>Search for Letterpress Words  </h1>
+
+  <p>
+    Enter up to 25 letters in the field below and we'll help you cheat at Letterpress.
+  </p>
+ 
+
+	<form action="/words/search">
+    <%= text_field_tag 'term', nil, :maxlength => 25 %>
+    <input name="submit" type="submit" class='btn btn-success' />
+  </form>
+  
+</div>
